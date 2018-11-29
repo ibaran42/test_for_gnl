@@ -6,7 +6,7 @@
 #    By: ibaran <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/28 16:43:56 by ibaran            #+#    #+#              #
-#    Updated: 2018/11/28 18:13:40 by ibaran           ###   ########.fr        #
+#    Updated: 2018/11/29 10:08:41 by ibaran           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ $(NAME): $(SRCS)
 	clang $(FLAGS) $(INCLUDES_FOR_GNL_C) -c get_next_line.c
 	clang $(FLAGS) $(INCLUDES_FOR_MAIN_C) -c main.c
 	clang -o $(NAME) $(OBJ) $(LIBRARY)
-	mv main.c $(NAME) ./tests/ 
+	mv main.c $(NAME) Makefile ./tests/
 
 clean:
 	/bin/rm -f $(OBJ)
